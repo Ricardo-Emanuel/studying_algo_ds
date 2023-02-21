@@ -5,13 +5,13 @@ Array é uma estrutura de dados que armazena elementos do mesmo tipo, como um ar
 
 Existem dois tipos de array, array estático e array dinâmico. O array estático tem um tamanho constante, ou seja, não podemos alterar o tamanho de um array estático após a inicialização. No entanto, arrays dinâmicos podem ser redimensionados durante a execução do programa usando um mecanismo chamado alocação dinâmica de memória. Isso nos permite criar novos arrays conforme necessário. O fluxo básico é o seguinte:
 
-    Inicializar um array de tamanho N;
-    Adicionar mais elementos no array;
-    Completar a memória alocada para este array;
-    Inicializar outro array de tamanho 2 * N;
-    Copiar os elementos para o novo array;
-    Liberar a memória alocada para o array antigo;
-    E assim por diante.
+1. Inicializar um array de tamanho **N**;
+2. Adicionar mais elementos no array;
+3. Completar a memória alocada para este array;
+4. Inicializar outro array de tamanho **2 * N**;
+5. Copiar os elementos para o novo array;
+6. Liberar a memória alocada para o array antigo;
+7. E assim por diante.
 
 Implementação de Array Dinâmico
 
