@@ -23,3 +23,48 @@ The most common way to implement a Linked List is initializing a head pointer wh
 -   Searching for an element is costly and requires O(n) time complexity;
 -   Sorting of linked lists is very complex and costly;
 -   Appending an element to a linked list is a costly operation, and takes O(n) time, where n is the number of elements in the linked list, as compared to arrays that take O(1) time.
+
+## Linked List Implementation
+
+This is a basic implementation in Python
+
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class LinkedList:
+    def __init__(self, data: int):
+        self.head = Node(data)
+        self.len = 1
+
+    def create(self, data):
+        node = Node(data)
+        self.head = node
+        self.len += 1
+
+    def append(self, data):
+        node = Node(data)
+        temp = self.head
+        while (temp.next != None):
+            temp = temp.next
+        temp.next = node
+        self.len += 1
+
+    def prepend(self, data):
+        node = Node(data)
+        node.next = self.head
+        self.head = node
+        self.len += 1
+
+    def deleteAt(self, index):
+        ...
+
+    def __len__(self):
+        return self.len
+
+if __name__ == "__main__":
+    ll = LinkedList(1)
+
+```
