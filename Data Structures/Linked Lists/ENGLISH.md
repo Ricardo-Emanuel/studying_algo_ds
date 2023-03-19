@@ -2,8 +2,8 @@
 
 ## What is a linked list
 
-$\quad$A Linked List is a linear data structure as an array, but it is not allocated in an contiguous block of memory. Each **NODE** of the **Linked List** has an value which can be an **int**, **float**, **char**, **string** and a reference (link) to the next **NODE** in the **Linked List**.  
-$\quad$The most common way to implement a Linked List is initializing a head pointer which points to the firts element of the list and since that element we can traverse the **Linked List** and reach any element in it.
+A Linked List is a linear data structure as an array, but it is not allocated in an contiguous block of memory. Each **NODE** of the **Linked List** has an value which can be an **int**, **float**, **char**, **string** and a reference (link) to the next **NODE** in the **Linked List**.  
+The most common way to implement a Linked List is initializing a head pointer which points to the firts element of the list and since that element we can traverse the **Linked List** and reach any element in it.
 
 ![Representation of a Linked List](../images/linked1.PNG)
 
