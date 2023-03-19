@@ -111,14 +111,14 @@ func main() {
 
     // Check the number of command line arguments
     if len(os.Args) != 2 {
-        fmt.Printf("Usage: %s size\n", os.Args[0])
+        fmt.Printf("Usage: %s <size>\n", os.Args[0])
         os.Exit(1)
     }
 
     // Convert the argument to an integer
     size, err := strconv.Atoi(os.Args[1])
     if err != nil {
-        fmt.Println("Erros: size must be an integer")
+        fmt.Println("Error: size must be an integer")
         os.Exit(1)
     }
 
