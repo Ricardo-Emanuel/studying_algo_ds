@@ -8,7 +8,7 @@ Existe dois tipos de listas ligadas, as unicamente ligadas e as duplamente ligad
 
 ![Representação de uma lista ligada](../images/linked1.PNG)
 
-## Vantagens da lista ligada sobre o array
+## Vantagens da lista ligada sobre o vetor
 
 - Facilidade na inserção e ao apagar;
 - Inserir no início (e algumas vezes ao final se utilizarmos também um apontador para o último elemento da lista) é uma operação constante, ou seja, tem O(1), o que é vantajoso comparado à mesma operação em um array que leva tempo linear, ou seja, O(n), onde n é o número de elementos no array.
