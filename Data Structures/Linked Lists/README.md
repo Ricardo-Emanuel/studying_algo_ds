@@ -2,7 +2,7 @@
 
 ## O que é uma Lista Ligada?
 
-Uma lista ligada é uma estrutura de dados linear como um array, mas os elementos da lista ligada não são alocados em um bloco contínuo de memória. Cada **NÓ** da **Lista Ligada** tem um valor que pode ser de qualquer tipo (teoricamente) e também uma referência, que funciona como um link para o próximo **NÓ** da lista.  
+Uma lista ligada é uma estrutura de dados linear como um vetor, mas os elementos da lista ligada não são alocados em um bloco contínuo de memória. Cada **NÓ** da **Lista Ligada** tem um valor que pode ser de qualquer tipo (teoricamente) e também uma referência, que funciona como um link para o próximo **NÓ** da lista.  
 A forma mais comum de se implementar uma Lista Ligada é inicializar um apontador para o primeiro item da lista e a partir deste conseguimos passar por todos elementos da lista, se necessário, através do **LINK** para os próximos elementos.  
 Existe dois tipos de listas ligadas, as unicamente ligadas e as duplamente ligadas. As unicamente ligadas tem apenas um ponteiro para o próximo elemento na lista enquanto a duplamente ligada tem um ponteiro para o próximo elemento e também para o anterios.
 
@@ -11,7 +11,7 @@ Existe dois tipos de listas ligadas, as unicamente ligadas e as duplamente ligad
 ## Vantagens da lista ligada sobre o vetor
 
 - Facilidade na inserção e ao apagar;
-- Inserir no início (e algumas vezes ao final se utilizarmos também um apontador para o último elemento da lista) é uma operação constante, ou seja, tem O(1), o que é vantajoso comparado à mesma operação em um array que leva tempo linear, ou seja, O(n), onde n é o número de elementos no array.
+- Inserir no início (e algumas vezes ao final se utilizarmos também um apontador para o último elemento da lista) é uma operação constante, ou seja, tem O(1), o que é vantajoso comparado à mesma operação em um vetor que leva tempo linear, ou seja, O(n), onde n é o número de elementos no vetor.
 
 ## Desvantagens da Lista Ligada
 
