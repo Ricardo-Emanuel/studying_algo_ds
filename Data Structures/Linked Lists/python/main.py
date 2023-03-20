@@ -4,9 +4,9 @@ class Node:
         self.next = None
 
 class LinkedList:
-    def __init__(self, data: int):
-        self.head = Node(data)
-        self.len = 1
+    def __init__(self):
+        self.head = Node(None)
+        self.len = 0
 
     def create(self, data):
         node = Node(data)
@@ -14,6 +14,9 @@ class LinkedList:
         self.len += 1
 
     def append(self, data):
+        if self.len == 0:
+            self.create(data)
+            return
         node = Node(data)
         temp = self.head
         while (temp.next != None):
@@ -60,4 +63,4 @@ class LinkedList:
             temp = temp.next
 
 if __name__ == "__main__":
-    ll = LinkedList(1)
+    ll = LinkedList()
