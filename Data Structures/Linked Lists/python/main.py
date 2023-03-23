@@ -5,59 +5,73 @@ class Node:
 
 class LinkedList:
     def __init__(self):
-        self.head = Node(None)
-        self.len = 0
+        self._head = Node(None)
+        self._len = 0
 
     def create(self, data):
         node = Node(data)
-        self.head = node
-        self.len += 1
+        self._head = node
+        self._len += 1
 
     def append(self, data):
-        if self.len == 0:
+        if self._len == 0:
             self.create(data)
             return
         node = Node(data)
-        temp = self.head
+        temp = self._head
         while (temp.next != None):
             temp = temp.next
         temp.next = node
-        self.len += 1
+        self._len += 1
 
     def prepend(self, data):
         node = Node(data)
-        node.next = self.head
-        self.head = node
-        self.len += 1
+        node.next = self._head
+        self._head = node
+        self._len += 1
     
     def deleteHead(self):
-        self.head = self.head.next
-        self.len -= 1
+        if self._len == 0:
+            print("The linked list is empty")
+            return
+        self._head = self._head.next if self._len else None
+        self._len -= 1
 
     def deleteTail(self):
-        temp = self.head
-        for i in range(self.len - 1):
-            self.tail = temp
-        self.len -= 1
+        if self._len == 0:
+            print("The linked list is empty")
+            return
+        elif self._len == 1:
+            self._head = None
+            self.tail = None
+            self._len -= 1
+        temp = self._head
+        for i in range(self._len - 1):
+            temp = temp.next
+        self.tail = temp
+        self._len -= 1
 
     def deleteAt(self, index):
+        if self._len == 0:
+            print("The linked list is empty")
+            return
         if index == 0:
             self.deleteHead()
             return
-        if index == -1 or index == self.len - 1:
+        if index == -1 or index == self._len - 1:
             self.deleteTail()
             return
-        temp = self.head
+        temp = self._head
         for i in range(index - 1):
             temp = temp.next
         temp.next = temp.next.next
-        self.len -= 1
+        self._len -= 1
 
     def __len__(self):
-        return self.len
+        return self._len
     
     def print(self):
-        temp = self.head
+        temp = self._head
         while temp != None:
             print(temp.data, " ", end="")
             temp = temp.next

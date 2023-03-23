@@ -16,9 +16,11 @@ Existem dois tipos de array, array estático e array dinâmico. O array estátic
 Implementação de Array Dinâmico
 
 Essa é a implementação de um array dinâmico em C:
+
+```C
 # include <stdio.h>
 # include <stdlib.h>
-```C
+
 int main(int argc, char *argv[]) {
 
     // Verifica o número de argumentos na linha de comando
